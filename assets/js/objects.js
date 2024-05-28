@@ -27,13 +27,20 @@
 // const customerCopy2 = { ...customer };
 // console.log("customerCopy2:>>", customerCopy2);
 
-// document.write(`<h2>${customer.name} ${customer.surname}</h2>
-// <p>${customer.userEmail}</p>
-// <p>${customer.userPassword}</p>
-// <p>${customer.userPhone}</p>
-// <p>${customer.userAdress.userCity}, ${customer.userAdress.userStreet},
-// ${customer.userAdress.userNumberHouse},
-//  ${customer.userAdress.userNumberFlat} </p>`);
+document.write(`
+<article>
+<h2>${customer.name} ${customer.surname}</h2>
+<p>${customer.userEmail}</p>
+<p>${customer.userPassword}</p>
+<p>${customer.userPhone}</p>
+<p>
+  ${customer.userAdress.userCity}, 
+  ${customer.userAdress.userStreet},
+  ${customer.userAdress.userNumberHouse},
+  ${customer.userAdress.userNumberFlat} 
+ </p>
+ </article>
+ `);
 
 //task#2
 
